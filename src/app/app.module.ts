@@ -12,21 +12,25 @@ import {
 import { HomeComponent } from './home-component/home-component.component';
 import { SelectComponent } from './select/select.component';
 import { FormsModule } from '../../node_modules/@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import {MatListModule} from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    SelectComponent
+    SelectComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, FlexLayoutModule,
     FormsModule,
     MatButtonModule, MatCardModule, MatIconModule,
     MatPaginatorModule, MatSelectModule, MatSidenavModule,
-    MatSortModule, MatToolbarModule, MatTableModule
-  ],
+    MatSortModule, MatToolbarModule, MatTableModule,MatListModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })
